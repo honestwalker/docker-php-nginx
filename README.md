@@ -1,6 +1,16 @@
-# PHP 7.0.11 + NGINX 1.10.2
+# PHP-FPM 7.0.11 + NGINX 1.10.2
 
-## 扩展列表
+## Usage
+
+Pull the image, create a new container and start it:
+
+```
+docker pull jmaple/php-nginx
+docker create --name php -p 80:80 --restart=always jmaple/php-nginx
+docker start php
+```
+
+## Extensions
 
 * git
 * swoole
