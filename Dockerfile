@@ -96,6 +96,10 @@ RUN apt-get install -y libxml2-dev \
 RUN apt-get install -y libicu52 libicu-dev \
 		&& docker-php-ext-install intl
 
+# xdebug
+RUN pecl install xdebug \
+    && rm -rf /tmp/pear
+
 
 EXPOSE 80 443 9000
 CMD nginx && php-fpm
