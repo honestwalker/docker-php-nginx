@@ -99,6 +99,7 @@ RUN apt-get install -y libicu52 libicu-dev \
 # xdebug
 RUN pecl install xdebug \
     && rm -rf /tmp/pear
+COPY conf.d/* /usr/local/etc/php/conf.d/
 
 
 EXPOSE 80 443 9000
