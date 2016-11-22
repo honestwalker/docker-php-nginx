@@ -5,8 +5,8 @@
 Pull the image, create a new container and start it:
 
 ```
-docker pull jmaple/php-nginx
-docker create --name php -p 80:80 --restart=always jmaple/php-nginx
+docker pull jmaple/docker-php-nginx:debuggable
+docker create --name php -p 80:80 --env XDEBUG_CONFIG="idekey=PHPSTORM profiler_enable=1" --restart=always jmaple/php-nginx
 docker start php
 ```
 
@@ -26,3 +26,4 @@ docker start php
 * gmagick 2.0.4RC1
 * icu
 * php intl
+* xdebug
