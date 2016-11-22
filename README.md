@@ -5,7 +5,7 @@
 Pull the image, create a new container and start it:
 
 ```
-docker pull jmaple/php-nginx
+docker pull jmaple/docker-php-nginx
 docker create --name php -p 80:80 --restart=always jmaple/php-nginx
 docker start php
 ```
