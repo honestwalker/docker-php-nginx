@@ -6,7 +6,7 @@ Pull the image, create a new container and start it:
 
 ```
 docker pull jmaple/docker-php-nginx:debuggable
-docker create --name php -p 80:80 --env XDEBUG_CONFIG="idekey=PHPSTORM profiler_enable=1" --restart=always jmaple/php-nginx
+docker create --name php -p 80:80 --env XDEBUG_CONFIG="idekey=PHPSTORM profiler_enable=1" --restart=always jmaple/docker-php-nginx:debuggable
 docker start php
 ```
 
