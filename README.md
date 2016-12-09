@@ -19,6 +19,8 @@ docker start php
 * gd
 * pdo
 * pdo_mysql
+* xml
+* zip
 * freetds
 * pdo_dblib
 * ffmpeg
